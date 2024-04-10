@@ -20,5 +20,12 @@ wasteful. So in our case we dont have to use an always online TPP.
 * Are all writers trusted?: If we want to keep things private, and only allow trusted writers to manipulate the state, we need to assume, <br />
 that not every address that interacts with our contract is trusted. <br />
 * Is public verifiability required?: No, the state of our storage is private. <br />
+<br />
+### Architecture of our solution: <br />
+1. First we define an array of addresses that can interact with the contract. <br />
+2. When we deploy the contract, only the owner can add or remove addresses, which can interact with the contract. <br />
+3. A caller to the contract with an address that is allowed can interact with the interface of the contract. <br />
+<br />
 
+Provided is an solidity smart contract solution.
 
