@@ -27,6 +27,7 @@ that not every address that interacts with our contract is trusted. <br />
 1. First we define an array of addresses that can interact with the contract. <br />
 2. When we deploy the contract, only the owner can add or remove addresses, which can interact with the contract. <br />
 3. A caller to the contract with an address that is allowed can interact with the interface of the contract. <br />
+4. The contract provides functions to modify or lookup the state of the business invenotry. <br />
 <br />
 
 Provided is an solidity smart contract solution.
