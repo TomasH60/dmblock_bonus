@@ -11,6 +11,7 @@ A simple use case for a problem, where a blockchain is suitable, is a business s
 The blockchain would be private, storing data about the current storage state of a business, <br />
 what kind of supplies the business stores and how much of them it stores. <br />
 <br />
+
 ### Addressing the key points to why we should use a blockchain solution for this system: <br />
 * Do you need to store state?: Yes, for our problem storing the state of our inventory is key. <br />
 * Are there multiple writers?: Yes, multiple employees can change and lookup the state of the storage at one time. <br />
@@ -21,6 +22,7 @@ wasteful. So in our case we dont have to use an always online TPP.
 that not every address that interacts with our contract is trusted. <br />
 * Is public verifiability required?: No, the state of our storage is private. <br />
 <br />
+
 ### Architecture of our solution: <br />
 1. First we define an array of addresses that can interact with the contract. <br />
 2. When we deploy the contract, only the owner can add or remove addresses, which can interact with the contract. <br />
